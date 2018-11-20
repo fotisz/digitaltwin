@@ -1,4 +1,4 @@
-# digitaltwin
+# Digital Twin
 One week of congestion and delay - How people and trains affect each other
 
 ## License
