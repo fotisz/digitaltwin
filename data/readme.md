@@ -2,54 +2,54 @@
 
 |#| Place ID | Place Name |
 | --- | --- | --- |
-|1| `alfcl` | Place *name 1* |
+|1| `alfcl` | Alewife Station |
 |2| `andrw` | Andrew Station |
 |3| `aport` | Place *name 1* |
 |4| `aqucl` | Place **name 2** |
 |5| `asmnl` | Ashmont Station |
-|6| `bbsta` | Place **name 2** |
+|6| `bbsta` | Back Bay Station |
 |7| `bmmnl` | Place *name 1* |
 |8| `bomnl` | Place **name 2** |
 |9| `brdwy` | Broadway Station |
-|10| `brntn` | Place **name 2** |
+|10| `brntn` | Braintree Station |
 |11| `ccmnl` | Place *name 1* |
 |12| `chmnl` | Charles/MGH Station |
-|13| `chncl` | Place *name 1* |
+|13| `chncl` | Chinatown Station |
 |14| `cntsq` | Central Square Station |
-|15| `davis` | Place *name 1* |
+|15| `davis` | Davis Station |
 |16| `dwnxg` | Downtown Crossing Station |
 |17| `fldcr` | Fields Corner Station |
-|18| `forhl` | Place **name 2** |
+|18| `forhl` | Forest Hills Station |
 |19| `gover` | Place *name 1* |
-|20| `grnst` | Place **name 2** |
+|20| `grnst` | Green St. Station |
 |21| `haecl` | Place *name 1* |
 |22| `harsq` | Harvard Square Station |
-|23| `jaksn` | Place *name 1* |
+|23| `jaksn` | Jackson Square Station |
 |24| `jfk` | JFK/UMass Station |
 |25| `knncl` | Kendall/MIT station |
-|26| `masta` | Place **name 2** |
+|26| `masta` | Massachusetts Ave. Station |
 |27| `mlmnl` | Place *name 1* |
 |28| `mvbcl` | Place **name 2** |
 |29| `north` | Place *name 1* |
-|30| `nqncy` | Place **name 2** |
+|30| `nqncy` | North Quincy Station |
 |31| `ogmnl` | Place *name 1* |
 |32| `orhte` | Place **name 2** |
 |33| `pktrm` | Park St. Station |
-|34| `portr` | Place **name 2** |
-|35| `qamnl` | Place *name 1* |
-|36| `qnctr` | Place **name 2** |
+|34| `portr` | Porter Square Station |
+|35| `qamnl` | Quincy Adams Station |
+|36| `qnctr` | Quincy Center Station |
 |37| `rbmnl` | Place *name 1* |
-|38| `rcmnl` | Place **name 2** |
-|39| `rugg` | Place *name 1* |
-|40| `sbmnl` | Place **name 2** |
+|38| `rcmnl` | Roxbury Crossing Station |
+|39| `rugg` | Ruggles Station |
+|40| `sbmnl` | Stony Brook Station |
 |41| `sdmnl` | Place *name 1* |
 |42| `shmnl` | Savin Hill Station |
 |43| `smmnl` | Shawmut Station |
 |44| `sstat` | South Station |
-|45| `state` | Place *name 1* |
+|45| `state` | State St. Station |
 |46| `sull` | Place **name 2** |
-|47| `tumnl` | Place *name 1* |
+|47| `tumnl` | Tufts Medical Center Station |
 |48| `welln` | Place **name 2** |
 |49| `wimnl` | Place *name 1* |
-|50| `wlsta` | Place **name 2** |
+|50| `wlsta` | Wollaston Station |
 |51| `wondl` | Place *name 1* |
