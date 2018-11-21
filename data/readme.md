@@ -1,8 +1,8 @@
 ## Data Dictionary
 
-| Place ID | Place Name |
-| --- | --- |
-| `alfcl` | Place *name 1* |
+|#| Place ID | Place Name |
+|1| --- | --- |
+|2| `alfcl` | Place *name 1* |
 | `andrw` | Place **name 2** |
 | `aport` | Place *name 1* |
 | `aqucl` | Place **name 2** |
@@ -26,3 +26,30 @@
 | `harsq` | Place **name 2** |
 | `jaksn` | Place *name 1* |
 | `jfk` | Place **name 2** |
+| `knncl` | Place *name 1* |
+| `masta` | Place **name 2** |
+| `mlmnl` | Place *name 1* |
+| `mvbcl` | Place **name 2** |
+| `north` | Place *name 1* |
+| `nqncy` | Place **name 2** |
+| `ogmnl` | Place *name 1* |
+| `orhte` | Place **name 2** |
+| `pktrm` | Place *name 1* |
+| `portr` | Place **name 2** |
+| `qamnl` | Place *name 1* |
+| `qnctr` | Place **name 2** |
+| `rbmnl` | Place *name 1* |
+| `rcmnl` | Place **name 2** |
+| `rugg` | Place *name 1* |
+| `sbmnl` | Place **name 2** |
+| `sdmnl` | Place *name 1* |
+| `shmnl` | Place **name 2** |
+| `smmnl` | Place *name 1* |
+| `sstat` | Place **name 2** |
+| `state` | Place *name 1* |
+| `sull` | Place **name 2** |
+| `tumnl` | Place *name 1* |
+| `welln` | Place **name 2** |
+| `wimnl` | Place *name 1* |
+| `wlsta` | Place **name 2** |
+| `wondl` | Place *name 1* |
