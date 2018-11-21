@@ -1,6 +1,6 @@
 ## Data Dictionary
 
-|#| Place ID | Place Name |
+|#| Station ID | Station Name |
 | --- | --- | --- |
 |1| `alfcl` | Alewife Station |
 |2| `andrw` | Andrew Station |
