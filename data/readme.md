@@ -26,7 +26,7 @@
 |22| `harsq` | Place **name 2** |
 |23| `jaksn` | Place *name 1* |
 |24| `jfk` | Place **name 2** |
-|25| `knncl` | Place *name 1* |
+|25| `knncl` | Kendall/MIT station |
 |26| `masta` | Place **name 2** |
 |27| `mlmnl` | Place *name 1* |
 |28| `mvbcl` | Place **name 2** |
