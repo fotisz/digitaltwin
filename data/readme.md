@@ -1,6 +1,6 @@
 ## Data Dictionary
 
-|#| Place ID | Place Name |
+|No| Place ID | Place Name |
 |1| --- | --- |
 |2| `alfcl` | Place *name 1* |
 | `andrw` | Place **name 2** |
