@@ -1,8 +1,8 @@
 ## Data Dictionary
 
 |No| Place ID | Place Name |
-|1| --- | --- |
-|2| `alfcl` | Place *name 1* |
+| --- | --- | --- |
+|| `alfcl` | Place *name 1* |
 || `andrw` | Place **name 2** |
 || `aport` | Place *name 1* |
 || `aqucl` | Place **name 2** |
