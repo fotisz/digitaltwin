@@ -20,57 +20,72 @@
   </div>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-  <!-- Congestions and Delay -->
-  <div class="full-width section-people-trains">
+   <!-- Pick Two Stops -->
+  <div class="full-width section-pick-two">
     <div class="container">
       <h3>
-        <a href="#interaction" class="anchor">
+        <a href="#your-commute" class="anchor">
           <span class="glyphicon glyphicon-link"></span>
         </a>
-        How People and Trains Affect Each Other
+        Your Commute
       </h3>
-      <p>When you look back at the Marey diagram, the slope of each line tells you how fast a train is going and the time it takes to get between stations.  When all of the start and stop times are lined up you can see a drastic variation in the time it takes to get between stops throughout the day.  If you have ever ridden the subway during rush hour then you have experienced what the steep lines in the Marey diagram feel like first-hand.</p>
-      <p>What causes these delays?  It’s hard to know for sure, but it appears that number of people riding the subway is a factor.</p>
+      <p>
+        How do all of these factors affect your commute? 
+        Click and drag on the
+        <a href="#" data-highlight=".map" class="hover-link pick-two-highlight">map</a>
+        from a starting station to an ending station to see a detailed breakdown of how long that trip takes at different points during a typical workday.
+        The
+        <a href="#" data-highlight=".circle.top" class="hover-link pick-two-highlight">points on top</a>
+        show all of the trip durations for a given starting time from the start to destination and the
+        <a href="#" data-highlight=".circle.bottom" class="hover-link pick-two-highlight">points on bottom</a>
+        show all of the times between when when trains leave the start station going to the destination station.
+        The time between trains is the longest you would possibly need to wait if you arrived just as the previous train was leaving.
+        The 
+        <a href="#" data-highlight=".top.range" class="hover-link pick-two-highlight">blue band</a>
+        excludes the shortest and longest 10% of all transit times, leaving behind the most-likely 80% range and the
+        <a href="#" data-highlight=".bottom.range" class="hover-link pick-two-highlight">orange band</a>
+        does the same for wait times between trains.
+        The 
+        <a href="#" data-highlight=".p50" class="hover-link pick-two-highlight">dark lines</a>
+        show the middle point where 50% of the time wait/transit times are higher and 50% of the time they are lower.
+      </p>
     </div>
-    
-    <div class="interaction-all">
-      
-      <div class="container text-center">
-        <h4>One Week of Congestion and Delay</h4>
-      </div>
-      <div class="loading"></div>
 
-      <!-- The congestion and delay visualization - glyph on the left, horizon/color bands on the right -->
-      <div class="viz clearfix">
-        <div class="left clearfix">
-          <div class="glyph clearfix"></div>
-          <div class="key clearfix"></div>
-        </div>
-        <div class="right clearfix">
+    <div class="viz clearfix">
+      <div class="left picker clearfix">
+        <div class="map dimmable clearfix"></div>
+        <div class="details dimmable clearfix"></div>
+        <div class="loading clearfix"></div>
+        <div class="key dimmable clearfix">
+          <span class="hide-on-ios">Drag from a starting station to an ending station to see how long the trip takes over time in the chart.</span>
+          <span class="only-ios">Click on a starting station then an ending station to see how long the trip takes over time in the chart.</span>
         </div>
       </div>
-      
-      <div class="container">
-        <p>
-          This visualization shows congestion and delay on the red, blue, and orange lines for the first full week in February. The <a href="#" class="hover-link highlight" data-highlight=".horizon">gray bands</a> show the total number of entries into the all stations per minute over time for each day of the week.  The <a href="#" class="hover-link highlight" data-highlight=".delay-rect">colored bands</a> below indicate whether the trains are running <span class="legend-fast">faster</span> or <span class="legend-slow">slower</span> than normal. 
-        </p>
-        <p>
-          The <a href="#" class="hover-link highlight" data-highlight=".breathing-glyph">map</a> shows the congestion and delay across the system at a time when you hover over the chart on the right.  The thickness of each line at a stop indicates number of entries per minute at that stop, and the color on the right-hand side of a track indicates delay in that direction using the same scale as the <a href="#" class="hover-link highlight" data-highlight=".delay-rect">colored bands</a>.
-        </p>
-        <p>
-          You can see basketball games letting out on
-          <a href="#" class="hover-link set-time" data-day="1" data-time="11:16 pm">Monday</a>,
-          <a href="#" class="hover-link set-time" data-day="2" data-time="10:04 pm">Tuesday</a>,
-          <a href="#" class="hover-link set-time" data-day="5" data-time="10:10 pm">Friday</a>, and
-          <a href="#" class="hover-link set-time" data-day="0" data-time="8:34 pm">Sunday</a>.
-          You can also tell that it snowed on
-          <a href="#" class="hover-link highlight" data-highlight=".day-3">Wednesday</a>
-          and people stayed home, especially when you compare how light
-          <a href="#" class="hover-link set-time" data-day="3" data-time="5:24 pm">Wednesday evening's rush hour</a>
-          was compared to 
-          <a href="#" class="hover-link set-time" data-day="4" data-time="5:24 pm">Thursday evening's rush hour</a>.
-        </p>
+      <div class="right pick-two clearfix">
+        <div class="inner-viz">
+        </div>
+        <div class="key dimmable clearfix">
+        </div>
       </div>
+    </div>
+
+    <div class="container">
+      <p>
+        In general, delays go up during rush hour but trains come more frequently, for example if you look at
+        <a href="#" data-start="place-sstat" data-end="place-knncl" class="click-link pick-two-choose">South Station to Kendall/MIT</a>
+        you will notice that the
+        <a href="#" data-highlight=".circle.top, .top.range" class="hover-link pick-two-highlight">transit times</a>
+        go up as the
+        <a href="#" data-highlight=".circle.bottom, .bottom.range" class="hover-link pick-two-highlight">wait times</a>
+        go down.
+        If you drag across the chart, the paragraph below will tell you that these effects roughly balance eachother out and the most-likely trip duration (half the normal time between trains plus total transit time) stays constant around 10-12 minutes.
+        It is also interesting to note that transit times on the blue line, for example
+        <a href="#" data-start="place-state" data-end="place-wondl" class="click-link pick-two-choose">State St. to Wonderland</a>
+        are much less variable than the red line.
+        Orange line trips like
+        <a href="#" data-start="place-dwnxg" data-end="place-forhl" class="click-link pick-two-choose">Downtown Crossing to Forest Hills</a>
+        are less variable in transit time - but trains come much less frequently and reliably.
+      </p>
     </div>
   </div>
 
