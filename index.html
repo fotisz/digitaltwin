@@ -20,60 +20,101 @@
   </div>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-  <!-- Congestions and Delay -->
-  <div class="full-width section-people-trains">
+  <!-- The People -->
+  <div class="full-width section-people loading">
     <div class="container">
       <h3>
-        <a href="#interaction" class="anchor">
+        <a href="#people" class="anchor">
           <span class="glyphicon glyphicon-link"></span>
         </a>
-        How People and Trains Affect Each Other
+        The People
       </h3>
-      <p>When you look back at the Marey diagram, the slope of each line tells you how fast a train is going and the time it takes to get between stations.  When all of the start and stop times are lined up you can see a drastic variation in the time it takes to get between stops throughout the day.  If you have ever ridden the subway during rush hour then you have experienced what the steep lines in the Marey diagram feel like first-hand.</p>
-      <p>What causes these delays?  It’s hard to know for sure, but it appears that number of people riding the subway is a factor.</p>
-    </div>
-    
-    <div class="interaction-all">
-      
-      <div class="container text-center">
-        <h4>One Week of Congestion and Delay</h4>
-      </div>
-      <div class="loading"></div>
+      <p>In a typical weekday, 425,000 people enter a station along the red, orange, or blue lines.  On weekends and holidays, that number drops to 200,000.  The busiest day was Friday February 7 when 470,187 people entered the system.</p>
+      <p>
+        This heatmap shows the average number of people that
+        <a href="#" class="hover-link dim" data-dim="exits">enter</a>
+        and
+        <a href="#" class="hover-link dim" data-dim="entrances">exit</a>
+        stations along the red, orange, and blue line for every hour over the entire month based on records from turnstiles at each station.  Each row represents one week. You can see weekends and weekdays with daily peaks at rush hour, as well as
+        <a href="#" class="hover-link highlight-total" data-highlight="holidays">a holiday</a>,
+        and
+        <a href="#" class="hover-link highlight-total" data-highlight="snow">two snow storms</a>.
+        Our exit data is less reliable since not all stations require that people exit through a turnstile.
+      </p>
 
-      <!-- The congestion and delay visualization - glyph on the left, horizon/color bands on the right -->
-      <div class="viz clearfix">
-        <div class="left clearfix">
-          <div class="glyph clearfix"></div>
-          <div class="key clearfix"></div>
-        </div>
-        <div class="right clearfix">
-        </div>
+      <!-- Turnstile heatmap over the all stations -->
+      <div class="spacing">
+        <h4 class="text-center">Entrances and Exits from All Stations during February 2014</h4>
+        <div class="turnstile-total"></div>
+        <div class="turnstile key text-center"></div>
       </div>
       
-      <div class="container">
-        <p>
-          This visualization shows congestion and delay on the red, blue, and orange lines for the first full week in February. The <a href="#" class="hover-link highlight" data-highlight=".horizon">gray bands</a> show the total number of entries into the all stations per minute over time for each day of the week.  The <a href="#" class="hover-link highlight" data-highlight=".delay-rect">colored bands</a> below indicate whether the trains are running <span class="legend-fast">faster</span> or <span class="legend-slow">slower</span> than normal. 
-        </p>
-        <p>
-          The <a href="#" class="hover-link highlight" data-highlight=".breathing-glyph">map</a> shows the congestion and delay across the system at a time when you hover over the chart on the right.  The thickness of each line at a stop indicates number of entries per minute at that stop, and the color on the right-hand side of a track indicates delay in that direction using the same scale as the <a href="#" class="hover-link highlight" data-highlight=".delay-rect">colored bands</a>.
-        </p>
-        <p>
-          You can see basketball games letting out on
-          <a href="#" class="hover-link set-time" data-day="1" data-time="11:16 pm">Monday</a>,
-          <a href="#" class="hover-link set-time" data-day="2" data-time="10:04 pm">Tuesday</a>,
-          <a href="#" class="hover-link set-time" data-day="5" data-time="10:10 pm">Friday</a>, and
-          <a href="#" class="hover-link set-time" data-day="0" data-time="8:34 pm">Sunday</a>.
-          You can also tell that it snowed on
-          <a href="#" class="hover-link highlight" data-highlight=".day-3">Wednesday</a>
-          and people stayed home, especially when you compare how light
-          <a href="#" class="hover-link set-time" data-day="3" data-time="5:24 pm">Wednesday evening's rush hour</a>
-          was compared to 
-          <a href="#" class="hover-link set-time" data-day="4" data-time="5:24 pm">Thursday evening's rush hour</a>.
-        </p>
+      <p>
+        The table and map below breaks down February's turnstile entries and exits by station.
+        Hover over a row in the table to highlight the corresponding circle on the map, or vice-versa.
+        Click on a row in the table to show a detailed heatmap for the entrances to and exits from that station over the month.
+        Click and drag on several table rows to highlight a range of stations.
+      </p>
+      <p>
+        You can see the busiest stations are all along the Red Line.
+        <a href="#" class="click-link highlight-stops" data-stops="Harvard">Harvard</a>
+        topped the list, followed close by
+        <a href="#" class="click-link highlight-stops" data-stops="South Station">South Station</a>
+        , and then
+        <a href="#" class="click-link highlight-stops" data-stops="Downtown Crossing">Downtown Crossing</a>
+        .  Next to each station are heatmaps showing
+        <a href="#" class="hover-link highlight" data-highlight="entrances">entrances</a>
+        and
+        <a href="#" class="hover-link highlight" data-highlight="exits">exits</a>
+        to each station per-hour for
+        <a href="#" class="hover-link highlight" data-highlight="weekday">weekdays</a>
+        and
+        <a href="#" class="hover-link highlight" data-highlight="offpeak">weekends/holidays</a>.
+        You can see that some stations are
+        <a href="#" class="click-link highlight-stops" data-stops="South Station,Downtown Crossing,Park Street,Back Bay,Kendall Square,State Street,Charles MGH,Ruggles,JFK/U Mass">work stations</a>
+        since their exits peak in the morning and entrances peak in the afternoon and that some stations are
+        <a href="#" class="click-link highlight-stops" data-stops="Forest Hills,Davis Square,Malden Center,Maverick,Sullivan Square,Alewife,Porter Square,Quincy Center,Wellington,North Quincy,Oak Grove">home stations</a>
+        since their entrances peak in the morning and exits peak in the afternoon.  Some stations are just
+        <a href="#" class="click-link highlight-stops" data-stops="Harvard,North Station,Central Square">busy all the time</a>.
+      </p>
+    </div>
+
+    <!-- Turnstile summary table - map on the left, table on the right -->
+    <div class="turnstile-viz fixed-container spacing">
+      <h4 class="text-center">Entrances and Exits per Station during February 2014</h4>
+      <div class="fixed-left" data-top="0">
+        <div class="glyph clearfix"></div>
+        <div class="key circles clearfix"></div>
+        <div class="side-caption clearfix">
+          <p>
+            Each circle above and row in the table represent a station, hover over one to highlight the other.
+            Next to each station are heatmaps showing
+            <a href="#" class="hover-link highlight" data-highlight="entrances">entrances</a>
+            and
+            <a href="#" class="hover-link highlight" data-highlight="exits">exits</a>
+            to each station per-hour for
+            <a href="#" class="hover-link highlight" data-highlight="weekday">weekdays</a>
+            and
+            <a href="#" class="hover-link highlight" data-highlight="offpeak">weekends/holidays</a>.
+          </p>
+          <p>
+            Notice
+            <a href="#" class="click-link highlight-stops" data-stops="South Station,Downtown Crossing,Park Street,Back Bay,Kendall Square,State Street,Charles MGH,Ruggles,JFK/U Mass">work stations</a>
+            with exit peaks in the morning and entrances peak in the afternoon,
+            <a href="#" class="click-link highlight-stops" data-stops="Forest Hills,Davis Square,Malden Center,Maverick,Sullivan Square,Alewife,Porter Square,Quincy Center,Wellington,North Quincy,Oak Grove">home stations</a>
+            with entrance peaks in the morning and exit peaks in the afternoon, and the stations that are just
+            <a href="#" class="click-link highlight-stops" data-stops="Harvard,North Station,Central Square">busy all the time</a>.
+          </p>
+        </div>
+      </div>
+      <div class="fixed-right">
+        <div class="inner">
+          <div class="turnstile-table"></div>
+          <div class="turnstile-all-key key"></div>
+        </div>
       </div>
     </div>
   </div>
-
   <!-- Pick Two Stops -->
   <div class="full-width section-pick-two">
     <div class="container">
